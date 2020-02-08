@@ -5,11 +5,10 @@ function mostrar()
 	var Resultado;
 
 	Precio=prompt("Escriba el precio: ","0");
-	PorcentajeDescuento=prompt("Escriba el porcentaje de descuento: ","0");
-
 	Precio=parseInt(Precio);
+
+	PorcentajeDescuento=prompt("Escriba el porcentaje de descuento: ","0");
 	PorcentajeDescuento=parseInt(PorcentajeDescuento);
-	Resultado=parseInt(Resultado);
 
 	Resultado=Precio-Precio*PorcentajeDescuento/100;
 
