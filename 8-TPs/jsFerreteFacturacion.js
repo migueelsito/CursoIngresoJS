@@ -11,11 +11,12 @@ function Sumar ()
 	var resultado;
 
 	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
-
 	precio1=parseInt(precio1);
+
+	precio2=document.getElementById('PrecioDos').value;
 	precio2=parseInt(precio2);
+
+	precio3=document.getElementById('PrecioTres').value;
 	precio3=parseInt(precio3);
 
 	resultado=precio1+precio2+precio3
@@ -30,11 +31,12 @@ function Promedio ()
 	var resultado;
 
 	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
-
 	precio1=parseInt(precio1);
+
+	precio2=document.getElementById('PrecioDos').value;
 	precio2=parseInt(precio2);
+
+	precio3=document.getElementById('PrecioTres').value;
 	precio3=parseInt(precio3);
 
 	resultado=(precio1+precio2+precio3)/3
@@ -50,11 +52,12 @@ function PrecioFinal ()
 	var resultado;
 
 	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
-
 	precio1=parseInt(precio1);
+
+	precio2=document.getElementById('PrecioDos').value;
 	precio2=parseInt(precio2);
+
+	precio3=document.getElementById('PrecioTres').value;
 	precio3=parseInt(precio3);
 
 	aumentoIVA=(precio1+precio2+precio3)*21/100;
