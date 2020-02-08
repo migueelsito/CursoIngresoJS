@@ -21,11 +21,10 @@ function mostrarAumento()
 	//var Resultado;
 
 	//Importe=prompt("Escriba el importe: ","0");
-	//Descuento=prompt("Escriba el descuento: ","0");
-
 	//Importe=parseInt(Importe);
+
+	//Descuento=prompt("Escriba el descuento: ","0");
 	//Descuento=parseInt(Descuento);
-	//Resultado=parseInt(Resultado);
 
 	//Resultado=Importe-Importe*Descuento/100;
 
