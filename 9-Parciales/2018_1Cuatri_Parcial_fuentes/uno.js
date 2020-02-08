@@ -6,9 +6,9 @@ function mostrar()
 	var perímetro;
 
 	ancho=prompt("Escriba el ancho del rectángulo: ");
-	largo=prompt("Escriba el largo del rectángulo: ");
-
 	ancho=parseInt(ancho);
+
+	largo=prompt("Escriba el largo del rectángulo: ");
 	largo=parseInt(largo);
 
 	perímetro=(ancho+largo)*2;
