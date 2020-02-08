@@ -8,9 +8,9 @@ function sumar()
 	var resultado;
 
 	primerNumero=document.getElementById('numeroUno').value;
-	segundoNumero=document.getElementById('numeroDos').value;
-
 	primerNumero=parseInt(primerNumero);
+	
+	segundoNumero=document.getElementById('numeroDos').value;
 	segundoNumero=parseInt(segundoNumero);
 
 	resultado=primerNumero+segundoNumero;
