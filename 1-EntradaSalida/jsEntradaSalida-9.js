@@ -8,7 +8,6 @@ function mostrarAumento()
 	var Resultado;
 
 	Sueldo=document.getElementById('sueldo').value;
-
 	Sueldo=parseInt(Sueldo);
 
 	Resultado=Sueldo+Sueldo*10/100;
