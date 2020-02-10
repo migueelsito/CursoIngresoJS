@@ -8,7 +8,7 @@ function mostrar()
 
 	if(edad==15)
 	{
-		alert("algo");
+		alert("niña bonita");
 	}
 }//FIN DE LA FUNCIÓN
 
