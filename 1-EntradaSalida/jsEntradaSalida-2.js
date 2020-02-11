@@ -9,7 +9,7 @@ function mostrar()
 	//edad=prompt("¿Cuántos años tienes?","0");
 
 	//alert("Hola, "+nombre+" de "+edad+" años");
-
+	//holaaaaaaaaaaaaaaaaaaa
 	var dato;
 
 	dato=prompt("Escribe algo: ");
