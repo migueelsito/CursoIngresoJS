@@ -20,5 +20,5 @@ function mostrar()
 			alert("APROBÓ");
 		}
 	}
-
+//probando git
 }//FIN DE LA FUNCIÓN
