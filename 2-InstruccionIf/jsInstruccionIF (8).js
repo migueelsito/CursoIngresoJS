@@ -12,7 +12,7 @@ function mostrar()
 	}
 	else
 	{
-		if(estadocivil=="Soltero"&&edad>18)
+		if(estadocivil=="Soltero"&&edad>17)
 		{
 			alert("Es soltero y no es menor.");
 		}
