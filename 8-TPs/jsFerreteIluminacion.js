@@ -54,7 +54,18 @@ function CalcularPrecio ()
 		{
 			if(cantidadDeLamparas==3)
 			{
-
+				if(marca=="ArgentinaLuz")
+				{
+					descuento=15;
+				}else
+				{
+					if(marca=="FelipeLamparas")
+				{
+					descuento=10;
+				}else
+				{
+					descuento=5;
+				}
 			}
 		}
 	}
