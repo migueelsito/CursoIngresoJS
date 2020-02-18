@@ -19,10 +19,6 @@ function mostrar()
 		case "Mayo":
 			
 		case "Junio":
-			
-		case "Julio":
-			
-		case "Agosto":
 			alert("Falta para el invierno.");
 			break;
 		case "Septiembre":
