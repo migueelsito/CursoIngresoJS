@@ -31,7 +31,6 @@ function mostrar()
 		default:
 			 alert("Abrigate que hace frio.");
 		break;
-		adsdsadsasdadsdsa
 	}
 
 
