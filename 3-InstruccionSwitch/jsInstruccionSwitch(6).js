@@ -40,6 +40,4 @@ function mostrar()
 			alert ("la hora no existe.")
 		break;
 	}
-
-
 }//FIN DE LA FUNCIÓN
