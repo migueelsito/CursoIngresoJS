@@ -1,17 +1,16 @@
 function mostrar()
 {
-
 	var contador=0;
 	var acumulador=0;
 	var numeroIngresado;
+	var promedio;
 
-	while(contador<0)
+	while(contador<5)
 	{
 		numeroIngresado=prompt("Ingrese un numero: ");
 		numeroIngresado=parseInt(numeroIngresado);
-		contador=contador+1;
 		acumulador=acumulador+numeroIngresado;
-
+		contador++;
 	}
 
 document.getElementById('suma').value=acumulador;
