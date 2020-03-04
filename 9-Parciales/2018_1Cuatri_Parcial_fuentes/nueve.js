@@ -9,18 +9,30 @@ function mostrar()
 	var tipoTransaccion;
 	var importe;
 	var respuesta;
-	var SumaDeEdad;
 	var contador;
+
+	var contadorDeHombres;
+	var contadorDeMujeres;
+	var contadorExtraccion;
+	var contadorDeposito;
+
+	var SumaDeEdad;
 	var promedioDeEdad;
 	var EdadMinima;
+	var EdadMaxima;
 	var NombreDeLaEdadMinima;
-	var contadorHombres;
+	var importeMaximo;
+	var SexoDelImporteMaximo;
+	var OperacionMasUtilizada;
+	var ImporteDeLaEdadMaxima;
 
 	respuesta="si";
-	SumaDeEdad=0;
 	contador=0;
-	EdadMinima=0;
-	contadorHombres=0;
+	SumaDeEdad=0;
+	contadorDeHombres=0;
+	contadorDeMujeres=0;
+	contadorExtraccion=0;
+	contadorDeposito=0;
 
 	while(respuesta=="si")
 	{
@@ -51,9 +63,9 @@ function mostrar()
 			importe=parseInt(importe);
 		}while(isNaN(importe)||importe<1||importe>5000);
 
-		//fin de la validacion
+		//Fin de la validacion
 
-		if(contador==0||edad<EdadMinima);
+		if(contador==0||edad<EdadMinima)
 		{
 			EdadMinima=edad;
 			NombreDeLaEdadMinima=nombre;
@@ -61,18 +73,58 @@ function mostrar()
 
 		if(sexo=="m")
 		{
-			contadorHombres++;
+			contadorDeHombres++;
+		}else
+		{
+			contadorDeMujeres++;
 		}
 		
-		contadorHombres++;
+		if(contador==0||importe>importeMaximo)
+		{
+			importeMaximo=importe;
+			SexoDelImporteMaximo=sexo;
+		}
+
+		switch(tipoTransaccion)
+		{
+			case "extraccion":
+			contadorExtraccion++;
+			break;
+			default:
+			contadorDeposito++;
+			break;
+		}
+
+		if(contador==0||edad>EdadMaxima)
+		{
+			EdadMaxima=edad;
+			ImporteDeLaEdadMaxima=importe;
+		}
+
 		contador++;
 		
 		SumaDeEdad=SumaDeEdad+edad;
 		promedioDeEdad=SumaDeEdad/contador;
 
-		respuesta=prompt("Ingrese si para seguir ingresando clienes");
+		respuesta=prompt("¿Quiere seguir ingresando clientes?");
 	}
 
+	//Fin del While
+
+	if(contadorExtraccion>contadorDeposito)
+	{
+		OperacionMasUtilizada=tipoTransaccion;
+	}else
+	{
+		OperacionMasUtilizada=tipoTransaccion;
+	}
+
+
 	document.write("El promedio de edad es: "+promedioDeEdad);
-	document.write("El nombre del mas joven es: ")+NombreDeLaEdadMinima;
+	document.write("<br> El nombre de la persona mas joven es: "+NombreDeLaEdadMinima);
+	document.write("<br> La cantidad de hombres es: "+contadorDeHombres);
+	document.write("<br> La cantidad de mujeres es: "+contadorDeMujeres);
+	document.write("<br> El sexo del importe mas alto es: "+SexoDelImporteMaximo);
+	document.write("<br> La operacion mas utilizada es: "+OperacionMasUtilizada);
+	document.write("<br> El importe de la persona mas vieja es: "+ImporteDeLaEdadMaxima)
 }
